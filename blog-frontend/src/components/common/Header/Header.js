@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
+import Button from '../Button';
 
 const cx = classNames.bind(styles);
 
@@ -12,7 +13,7 @@ const Header = () => (
         <Link to="/">reactblog</Link>
       </div>
       <div className={cx('right')}>
-        오른쪽
+        <Button theme="outline" to="/editor">새 포스트</Button>
       </div>
     </div>
   </header>
