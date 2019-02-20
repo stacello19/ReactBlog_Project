@@ -5,11 +5,17 @@ import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
 
 import * as editorActions from 'store/modules/editor';
+import queryString from 'query-string';
 
 class EditorHeaderContainer extends Component {
     componentDidMount() {
-        const { EditorActions } = this.props;
+        const { EditorActions, location } = this.props;
         EditorActions.initialize();
+
+        const { id } = queryString.parse(location.search);
+        if(id) {
+            EditorActions.getPost(id);
+        }
     }
 
     handleGoBack = () => {
