@@ -6,15 +6,15 @@ import Button from 'components/common/Button';
 
 const cx = classNames.bind(styles);
 
-const AskRemoveModal = () => (
-    <ModalWrapper>
+const AskRemoveModal = ({visible, onConfirm, onCancel}) => (
+    <ModalWrapper visible={visible}>
         <div className={cx('question')}>
             <div className={cx('title')}>Delete Post</div>
             <div className={cx('description')}>Are you going to delete this post?</div>
         </div>
         <div className={cx('options')}>
-            <Button theme="gray">Cancel</Button>
-            <Button>Delete</Button>
+            <Button theme="gray" onClick={onCancel}>Cancel</Button>
+            <Button onClick={onConfirm}>Delete</Button>
         </div>
     </ModalWrapper>
 );
