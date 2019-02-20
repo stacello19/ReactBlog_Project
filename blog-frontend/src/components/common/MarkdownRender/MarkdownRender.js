@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import styles from './MarkdownRender.scss';
 import classNames from 'classnames/bind';
 import marked from 'marked';
+// prism 
+import Prism from 'prismjs';
+import 'prismjs/themes/prism-okaidia.css';
+// http://prismjs.com/#languages-list
+import 'prismjs/components/prism-bash.min.js';
+import 'prismjs/components/prism-javascript.min.js'
+import 'prismjs/components/prism-jsx.min.js';
+import 'prismjs/components/prism-css.min.js';
 
 const cx = classNames.bind(styles);
 
@@ -35,6 +43,9 @@ class MarkdownRender extends Component {
     componentDidUpdate(prevProps, prevState) {
         if(prevProps.markdown !== this.props.markdown) {
             this.renderMarkdown();
+        }
+        if(prevState.html !== this.state.html) {
+            Prism.highlightAll();
         }
     }
     render() {
