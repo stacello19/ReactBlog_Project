@@ -6,19 +6,20 @@ import * as baseActions from 'store/modules/base';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-class HeadContainer extends Component {
+class HeaderContainer extends Component {
     handleRemove = () => {
         const { BaseActions } = this.props;
         BaseActions.showModal('remove');
     }
     render() {
         const { handleRemove } = this;
-        const { match } = this.props;
+        const { match, logged } = this.props;
 
         const { id } = match.params;
         return (
             <Header
             postId={id}
+            logged={logged}
             onRemove={handleRemove}
             />
         );
@@ -26,8 +27,10 @@ class HeadContainer extends Component {
 }
 
 export default connect(
-    (state) => ({}),
+    (state) => ({
+        logged: state.base.get('logged')
+    }),
     (dispatch) => ({
         BaseActions: bindActionCreators(baseActions, dispatch)
     })
-)(withRouter(HeadContainer));
+)(withRouter(HeaderContainer));

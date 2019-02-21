@@ -24,14 +24,13 @@ mongoose.connect(mongoURI, { useNewUrlParser: true}).then(
 
 const app = new Koa;
 const router = new Router();
-
-router.use('/api', api.routes());
-
-app.use(bodyParser());
-
 const sessionConfig = {
     maxAge: 86400000
-};
+}; 
+
+app.use(bodyParser());
+router.use('/api', api.routes());
+
 
 app.use(session(sessionConfig, app));
 app.keys=[signKey];
