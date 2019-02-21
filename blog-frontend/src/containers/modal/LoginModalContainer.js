@@ -3,7 +3,6 @@ import LoginModal from 'components/modal/LoginModal';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as baseActions from 'store/modules/base';
-import Base from '../common/Base';
 
 class LoginModalContainer extends Component {
     handleLogin = async () => {
@@ -17,9 +16,9 @@ class LoginModalContainer extends Component {
         }
     }
     handleCancel = () => {
-        const { baseActions } = this.props;
-        baseActions.hideModal('login');
-    }
+        const { BaseActions } = this.props;
+        BaseActions.hideModal('login');
+      }
     handleChange = (e) => {
         const { value } = e.target;
         const { BaseActions } = this.props;
