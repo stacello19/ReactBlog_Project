@@ -16,7 +16,7 @@ const Pagination = ({page, lastPage, tag}) => {
                 Previous Page
             </Button>
             <div className={cx('number')}>
-                페이지 {page}
+                Page {page}
             </div>
             <Button disabled={page === lastPage} to={createPagePath(page + 1)}>
                 Next Page
