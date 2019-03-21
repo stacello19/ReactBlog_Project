@@ -9,4 +9,4 @@ and run another ```yarn start``` for the frontend.
 
 ## Video Demonstration
 
-![video](https://img.youtube.com/vi/CjBA5pO6w-E/0.jpg)(https://youtu.be/CjBA5pO6w-E)
+![video demostration](https://img.youtube.com/vi/CjBA5pO6w-E/0.jpg)](https://youtu.be/CjBA5pO6w-E)
