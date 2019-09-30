@@ -1,11 +1,7 @@
-# To Start
+# To Experience
 
-Run ```yarn start``` for backend and this will appear...
-```
-listening to port 4000
-connected to mongodb
-```
-and run another ```yarn start``` for the frontend. 
+Go to this link: http://4.146.173.27:3000. 
+For the website, you need to login.. The password is react0000. 
 
 ## Video Demonstration
 
