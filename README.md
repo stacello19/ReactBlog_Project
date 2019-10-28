@@ -1,12 +1,11 @@
-# To Start
+# To Experience
+Go to this link: http://54.146.173.27:3000. 
+For the website, you need to login.. The password is react0000. 
 
-Run ```yarn start``` for backend and this will appear...
-```
-listening to port 4000
-connected to mongodb
-```
-and run another ```yarn start``` for the frontend. 
+# Skills
+React, Redux, MongoDB, Mongoose, Koa, SCSS, and AWS
 
-## Video Demonstration
+# Video Demonstration
+See the demonstration by clicking the image
 
 [![video demostration](https://img.youtube.com/vi/CjBA5pO6w-E/0.jpg)](https://youtu.be/CjBA5pO6w-E)
