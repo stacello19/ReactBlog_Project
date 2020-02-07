@@ -1,4 +1,4 @@
-# React Blog App ![](http://54.146.173.27:3000)
+# React Blog App (http://54.146.173.27:3000)
 For Log in, password is **react0000**
 
 ## Skills
