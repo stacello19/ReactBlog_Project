@@ -1,9 +1,14 @@
-# To Experience
-Go to this link: http://54.146.173.27:3000. 
-For the website, please Log In! The password is react0000. 
+# React Blog App ![](http://54.146.173.27:3000)
+For Log in, password is **react0000**
 
-# Skills
-React, Redux, MongoDB, Mongoose, Koa, SCSS, and AWS
+## Skills
+* React
+* Redux
+* MongoDB (NoSQL)
+* Mongoose
+* Koa
+* SCSS
+* AWS (EC2 ubuntu)
 
 # Video Demonstration
 See the demonstration by clicking the image
