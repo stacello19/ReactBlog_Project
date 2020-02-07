@@ -5,7 +5,7 @@ For Log in, password is **react0000**
 * React
 * Redux
 * MongoDB (NoSQL)
-* Mongoose
+* Mongoose (Oject Data Modeling)
 * Koa
 * SCSS
 * AWS (EC2 ubuntu)
