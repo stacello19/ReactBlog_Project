@@ -2,7 +2,6 @@
 
 
 # React Blog App (http://stacello.me/)
-For Log in, password is **react0000**
 
 ## Skills
 * React
